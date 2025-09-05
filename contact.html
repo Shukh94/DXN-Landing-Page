@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>যোগাযোগ - DXN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- WhatsApp ফ্লোটিং বাটন -->
+    <a
+      href="https://wa.me/8801707042018?text=আমি%20DXN%20সম্পর্কে%20জানতে%20চাই"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- হেডার সেকশন -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html"
+            ><div class="logo">
+              <i class="fas fa-leaf"></i>
+              <span>DXN</span>
+            </div></a
+          >
+          <nav>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html" class="active">যোগাযোগ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- যোগাযোগ হিরো সেকশন -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>DXN সাথে যোগাযোগ করুন</h1>
+        <p>আমরা আপনার প্রশ্ন, মতামত এবং পরামর্শের জন্য সর্বদা উপলব্ধ</p>
+      </div>
+    </section>
+
+    <!-- যোগাযোগ তথ্য সেকশন -->
+    <section class="contact-info">
+      <div class="container">
+        <h2 class="section-title">আমাদের সাথে যোগাযোগ করুন</h2>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>ফোন করুন</h3>
+            <p>+8801707042018</p>
+            <p>+880XXXXXXX</p>
+            <a href="tel:+8801707042018" class="info-link">কॉল করুন</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>বিনা দ্বিধায় WhatsApp এ মেসেজ করুন</p>
+            <p>24/7 available</p>
+            <a
+              href="https://wa.me/8801707042018"
+              class="info-link"
+              target="_blank"
+              >মেসেজ করুন</a
+            >
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>ইমেইল করুন</h3>
+            <p>info@dxn-bd.com</p>
+            <p>support@dxn-bd.com</p>
+            <a href="mailto:info@dxn-bd.com" class="info-link">ইমেইল করুন</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>অফিস ঠিকানা</h3>
+            <p>ধানমন্ডি, ঢাকা</p>
+            <p>বাংলাদেশ</p>
+            <a href="#map" class="info-link">মানচিত্র দেখুন</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- যোগাযোগ ফর্ম সেকশন -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-info">
+            <h2>আমাদেরকে сообщение পাঠান</h2>
+            <p>
+              আপনার যে কোনো প্রশ্ন বা পরামর্শ থাকলে নিচের ফর্মটি পূরণ করুন। আমরা
+              দ্রুত আপনার সাথে যোগাযোগ করব।
+            </p>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>কার্যসময়</h4>
+                  <p>শনি - বৃহস্পতি: সকাল ৯টা - সন্ধ্যা ৬টা</p>
+                  <p>শুক্রবার: বন্ধ</p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                  <h4>সাপোর্ট</h4>
+                  <p>আমাদের সাপোর্ট টিম আপনার সাহায্যের জন্য সর্বদা প্রস্তুত</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">আপনার নাম *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">ইমেইল ঠিকানা *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">ফোন নম্বর *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">বিষয় *</label>
+              <select id="subject" name="subject" required>
+                <option value="">বিষয় নির্বাচন করুন</option>
+                <option value="product">প্রোডাক্ট সম্পর্কিত প্রশ্ন</option>
+                <option value="business">ব্যবসার সুযোগ</option>
+                <option value="support">টেকনিক্যাল সাপোর্ট</option>
+                <option value="complaint">অভিযোগ</option>
+                <option value="suggestion">পরামর্শ</option>
+                <option value="other">অন্যান্য</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">আপনার сообщение *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              <i class="fas fa-paper-plane"></i> পাঠান
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions সেকশন -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>DXN প্রোডাক্ট অর্ডার করতে কত সময় লাগে?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                ঢাকা শহরের মধ্যে সাধারণত ২৪-৪৮ ঘন্টার মধ্যে ডেলিভারি করা হয়।
+                অন্যান্য জেলাগুলিতে ৩-৫ কার্যদিবস সময় লাগতে পারে।
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>প্রোডাক্ট রিটার্ন的政策是什么?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                আমাদের ৭ দিনের রিটার্ন政策 আছে। যদি প্রোডাক্টে任何 সমস্যা
+                থাকে或者您不满意, আপনি ৭ দিনের মধ্যে রিটার্ন করতে পারেন।
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>কিভাবে DXN ব্যবসা শুরু করবেন?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                DXN ব্যবসা শুরু করতে আপনি আমাদের সাথে直接 যোগাযোগ করুন অথবা
+                WhatsApp এ মেসেজ করুন। আমরা আপনাকে সম্পূর্ণ guidance提供 করব।
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>আমি কি সরাসরি অফিস থেকে প্রোডাক্ট কিনতে পারব?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                হ্যাঁ, আপনি আমাদের অফিস থেকে直接 প্রোডাক্ট কিনতে পারেন। অফিস
+                ভিজিটের জন্য আগে ফোন করে时间确认 করুন।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- মানচিত্র সেকশন -->
+    <section class="map-section" id="map">
+      <div class="container">
+        <h2 class="section-title">আমাদের অবস্থান</h2>
+
+        <div class="map-container">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>ধানমন্ডি, ঢাকা</h3>
+            <p>বাংলাদেশ</p>
+            <a href="https://goo.gl/maps/example" class="btn" target="_blank">
+              <i class="fas fa-directions"></i> গুগল ম্যাপে দেখুন
+            </a>
+          </div>
+
+          <div class="location-info">
+            <h3>অফিস ভিজিটের সময়</h3>
+            <ul>
+              <li><strong>শনি - বৃহস্পতি:</strong> সকাল ৯টা - সন্ধ্যা ৬টা</li>
+              <li><strong>শুক্রবার:</strong> বন্ধ</li>
+              <li><strong>জন্য appointment:</strong> +8801707042018</li>
+            </ul>
+
+            <div class="transport-info">
+              <h4>কিভাবে আসবেন:</h4>
+              <p><i class="fas fa-bus"></i> বাস: ধানমন্ডি ২৭ নম্বর বাস স্টপ</p>
+              <p>
+                <i class="fas fa-taxi"></i> ride-sharing: Uber/Pathao to DXN
+                Office
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>DXN সম্পর্কে</h3>
+            <p>
+              DXN হল একটি আন্তর্জাতিক কোম্পানি, যা মূলত গ্যানোডার্মা ভিত্তিক
+              হেলথ প্রোডাক্টস তৈরি করে। বিশ্বব্যাপী আমাদের কার্যক্রম রয়েছে।
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>দ্রুত লিংক</h3>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>যোগাযোগ</h3>
+            <p>ইমেইল: info@dxn-bd.com</p>
+            <p>ফোন: +8801707042018</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/8801707042018" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 DXN Bangladesh. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
