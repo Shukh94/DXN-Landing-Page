@@ -1,0 +1,405 @@
+/* বেসিক স্টাইলিং */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #2e7d32;
+  --secondary: #1565c0;
+  --accent: #ff8f00;
+  --light: #f5f5f5;
+  --dark: #333;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* হেডার স্টাইলিং */
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+nav ul li a.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* প্রোডাক্ট হিরো সেকশন */
+.product-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1553787499-2db2e7f40402?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+      no-repeat center center/cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* ফিল্টার সেকশন */
+.filters {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: -40px auto 40px;
+  position: relative;
+  max-width: 1200px;
+}
+
+.filter-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: var(--light);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* প্রোডাক্টস সেকশন */
+.products {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  height: 200px;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.product-category {
+  display: inline-block;
+  background-color: var(--light);
+  color: var(--secondary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ff6f00;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+.btn-details {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-details:hover {
+  background-color: #0d47a1;
+}
+
+/* ফুটার */
+footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+/* WhatsApp ফ্লোটিং বাটন */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+/* রেসপন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .filter-buttons {
+    gap: 5px;
+  }
+
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-hero {
+    padding: 60px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>প্রোডাক্ট বিস্তারিত - DXN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product-details.css" />
+  </head>
+  <body>
+    <!-- WhatsApp ফ্লোটিং বাটন -->
+    <a
+      href="https://wa.me/8801707042018?text=আমি%20DXN%20প্রোডাক্ট%20সম্পর্কে%20জানতে%20চাই"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- হেডার সেকশন -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>DXN</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- প্রোডাক্ট ডিটেইল সেকশন -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="products.html">&larr; প্রোডাক্টস তালিকায় ফিরে যান</a>
+        </div>
+
+        <div class="detail-content">
+          <div class="detail-image">
+            <img id="detail-img" src="" alt="প্রোডাক্ট ইমেজ" />
+          </div>
+
+          <div class="detail-info">
+            <span class="detail-category" id="detail-category"></span>
+            <h1 id="detail-title"></h1>
+            <div class="detail-price" id="detail-price"></div>
+
+            <div class="detail-description">
+              <p id="detail-description"></p>
+            </div>
+
+            <div class="detail-features">
+              <h3>উপকারিতা</h3>
+              <ul id="detail-features">
+                <!-- বৈশিষ্ট্য এখানে যোগ হবে -->
+              </ul>
+            </div>
+
+            <div class="usage-instructions">
+              <h3>ব্যবহার বিধি</h3>
+              <p id="usage-text"></p>
+            </div>
+
+            <div class="detail-actions">
+              <a href="#" class="btn btn-whatsapp" id="detail-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp এ অর্ডার করুন
+              </a>
+              <a href="business.html" class="btn btn-business">
+                <i class="fas fa-briefcase"></i> ব্যবসার সুযোগ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- সম্পর্কিত প্রোডাক্টস -->
+    <section class="related-products">
+      <div class="container">
+        <h2 class="section-title">সম্পর্কিত প্রোডাক্টস</h2>
+        <div class="product-grid" id="related-products">
+          <!-- সম্পর্কিত প্রোডাক্টস এখানে লোড হবে -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>DXN সম্পর্কে</h3>
+            <p>
+              DXN হল একটি আন্তর্জাতিক কোম্পানি, যা মূলত গ্যানোডার্মা ভিত্তিক
+              হেলথ প্রোডাক্টস তৈরি করে। বিশ্বব্যাপী আমাদের কার্যক্রম রয়েছে।
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>দ্রুত লিংক</h3>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>যোগাযোগ</h3>
+            <p>ইমেইল: info@dxn-bd.com</p>
+            <p>ফোন: +8801707042018</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/8801707042018" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 DXN Bangladesh. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="product-details.js"></script>
+  </body>
+</html>

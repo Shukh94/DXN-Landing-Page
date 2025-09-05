@@ -1,0 +1,467 @@
+/* বেসিক স্টাইলিং */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #2e7d32;
+  --secondary: #1565c0;
+  --accent: #ff8f00;
+  --light: #f5f5f5;
+  --dark: #333;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* হেডার স্টাইলিং */
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+/* প্রোডাক্ট ডিটেইল সেকশন */
+.product-detail {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.detail-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 400px;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-info h1 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.detail-category {
+  display: inline-block;
+  background-color: var(--light);
+  color: var(--secondary);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.detail-price {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.detail-description {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.detail-features {
+  margin-bottom: 25px;
+}
+
+.detail-features h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.detail-features ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.detail-features li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.detail-features li:before {
+  content: "✓";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.usage-instructions {
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.usage-instructions h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.usage-instructions p {
+  line-height: 1.7;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+.btn-business {
+  background-color: var(--secondary);
+}
+
+.btn-business:hover {
+  background-color: #0d47a1;
+}
+
+/* সম্পর্কিত প্রোডাক্টস সেকশন */
+.related-products {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary);
+  font-size: 2.2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.related-product-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.related-product-img {
+  height: 200px;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+}
+
+.related-product-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-product-info h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.related-product-category {
+  display: inline-block;
+  background-color: var(--light);
+  color: var(--secondary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.related-product-price {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.related-product-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ফুটার */
+footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+/* WhatsApp ফ্লোটিং বাটন */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+/* রেসপন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .detail-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .detail-image {
+    height: 300px;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .detail-price {
+    font-size: 1.5rem;
+  }
+}

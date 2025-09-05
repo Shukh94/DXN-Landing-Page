@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DXN - প্রোডাক্টস</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <!-- WhatsApp ফ্লোটিং বাটন -->
+    <a
+      href="https://wa.me/8801707042018?text=আমি%20DXN%20প্রোডাক্ট%20সম্পর্কে%20জানতে%20চাই"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- হেডার সেকশন -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>DXN</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html" class="active">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- প্রোডাক্ট হিরো সেকশন -->
+    <section class="product-hero">
+      <div class="container">
+        <h1>DXN প্রোডাক্টস</h1>
+        <p>
+          প্রাকৃতিক উপাদানে তৈরি উচ্চমানের পণ্য যা আপনার স্বাস্থ্য ও সৌন্দর্যকে
+          উন্নত করবে
+        </p>
+      </div>
+    </section>
+
+    <!-- ফিল্টার সেকশন -->
+    <div class="container">
+      <div class="filters">
+        <h2 class="filter-title">প্রোডাক্ট ফিল্টার করুন</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">
+            সব প্রোডাক্ট
+          </button>
+          <button class="filter-btn" data-filter="health">
+            হেলথ প্রোডাক্ট
+          </button>
+          <button class="filter-btn" data-filter="beverage">বেভারেজ</button>
+          <button class="filter-btn" data-filter="skincare">
+            স্কিন কেয়ার
+          </button>
+          <button class="filter-btn" data-filter="personal">
+            পারসোনাল কেয়ার
+          </button>
+          <button class="filter-btn" data-filter="supplement">
+            সাপ্লিমেন্ট
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- প্রোডাক্টস সেকশন -->
+    <section class="products">
+      <div class="container">
+        <h2 class="section-title">আমাদের প্রোডাক্টস</h2>
+        <div class="product-grid">
+          <!-- হেলথ প্রোডাক্ট -->
+          <div class="product-card" data-category="health">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">হেলথ প্রোডাক্ট</span>
+              <h3>গ্যানোডার্মা ক্যাপسুল</h3>
+              <p>
+                ইমিউনিটি সিস্টেম শক্তিশালী করে এবং শরীরের এনার্জি লেভেল বাড়ায়।
+              </p>
+              <div class="product-price">৳ ১,২০০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20ক্যাপসুল%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-capsule"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- বেভারেজ -->
+          <div class="product-card" data-category="beverage">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">বেভারেজ</span>
+              <h3>গ্যানোডার্মা ইনস্ট্যান্ট কফি</h3>
+              <p>প্রাকৃতিক গ্যানোডার্মা এক্সট্র্যাক্ট সমৃদ্ধ সুস্বাদু কফি।</p>
+              <div class="product-price">৳ ৮৫০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20ইনস্ট্যান্ট%20কফি%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-coffee"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- স্কিন কেয়ার -->
+          <div class="product-card" data-category="skincare">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">স্কিন কেয়ার</span>
+              <h3>গ্যানোডার্মা ফেসিয়াল ক্লিনজার</h3>
+              <p>
+                প্রাকৃতিক উপাদানে তৈরি ফেসিয়াল ক্লিনজার যা ত্বককে পরিষ্কার ও
+                উজ্জ্বল করে।
+              </p>
+              <div class="product-price">৳ ۱,۵۰۰</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20ফেসিয়াল%20ক্লিনজার%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-cleanser"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- পারসোনাল কেয়ার -->
+          <div class="product-card" data-category="personal">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">পারসোনাল কেয়ার</span>
+              <h3>গ্যানোডার্মা টুথপেস্ট</h3>
+              <p>
+                প্রাকৃতিক অ্যান্টিব্যাকটেরিয়াল টুথপেস্ট যা দাঁত ও মাড়ির
+                স্বাস্থ্য রক্ষা করে।
+              </p>
+              <div class="product-price">৳ ৩২০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20টুথপেস্ট%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-toothpaste"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- সাপ্লিমেন্ট -->
+          <div class="product-card" data-category="supplement">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">সাপ্লিমেন্ট</span>
+              <h3>স্পিরুলিনা ট্যাবলেট</h3>
+              <p>
+                পুষ্টিগুণে ভরপুর স্পিরুলিনা যা শরীরের প্রোটিনের চাহিদা পূরণ করে।
+              </p>
+              <div class="product-price">৳ ৯০০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=স্পিরুলিনা%20ট্যাবলেট%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=spirulina-tablets"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- বেভারেজ -->
+          <div class="product-card" data-category="beverage">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">বেভারেজ</span>
+              <h3>গ্যানোডার্মা চা</h3>
+              <p>
+                সুগন্ধী ভেষজ চা যা স্ট্রেস কমায়, হজমশক্তি বাড়ায় এবং শরীর থেকে
+                টক্সিন দূর করে।
+              </p>
+              <div class="product-price">৳ ৭৫০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20চা%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-tea"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- হেলথ প্রোডাক্ট -->
+          <div class="product-card" data-category="health">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1585435557343-3b092031d5b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">হেলথ প্রোডাক্ট</span>
+              <h3>কর্ডিসেপস ক্যাপসুল</h3>
+              <p>শরীরের স্ট্যামিনা এবং শক্তি বৃদ্ধি করে, ক্লান্তি দূর করে।</p>
+              <div class="product-price">৳ ۱,۸۰۰</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=কর্ডিসেপস%20ক্যাপসুল%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডার</a
+                >
+                <a
+                  href="product-details.html?id=cordyceps-capsule"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- স্কিন কেয়ার -->
+          <div class="product-card" data-category="skincare">
+            <div
+              class="product-img"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+              "
+            ></div>
+            <div class="product-info">
+              <span class="product-category">স্কিন কেয়ার</span>
+              <h3>গ্যানোডার্মا ময়েশ্চারাইজার</h3>
+              <p>ত্বককে কোমল ও hydrated রাখে, প্রাকৃতিক উপাদানে তৈরি।</p>
+              <div class="product-price">৳ ۱,২০০</div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/8801707042018?text=গ্যানোডার্মা%20ময়েশ্চারাইজার%20সম্পর্কে%20জানতে%20চাই"
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i> অর্ডار</a
+                >
+                <a
+                  href="product-details.html?id=ganoderma-moisturizer"
+                  class="btn btn-details"
+                  >বিস্তারিত</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>DXN সম্পর্কে</h3>
+            <p>
+              DXN হল একটি আন্তর্জাতিক কোম্পানি, যা মূলত গ্যানোডার্মা ভিত্তিক
+              হেলথ প্রোডাক্টস তৈরি করে। বিশ্বব্যাপী আমাদের কার্যক্রম রয়েছে।
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>দ্রুত লিংক</h3>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>যোগাযোগ</h3>
+            <p>ইমেইল: info@dxn-bd.com</p>
+            <p>ফোন: +8801707042018</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/8801707042018" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 DXN Bangladesh. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+  </body>
+</html>
