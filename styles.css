@@ -54,8 +54,6 @@ header {
 .logo a {
   text-decoration: none;
   color: white;
-  display: flex;
-  align-items: center;
 }
 
 .logo i {
@@ -146,63 +144,10 @@ nav ul li a.active {
   background-color: #128c7e;
 }
 
-/* DXN পরিচয় সেকশন */
-.about-dxn {
-  padding: 80px 0;
-  background-color: white;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-
-.about-image {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.about-text h2 {
-  color: var(--primary);
-  margin-bottom: 20px;
-  font-size: 2.2rem;
-}
-
-.about-text p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.about-features {
-  margin-top: 30px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.feature-item i {
-  color: var(--primary);
-  font-size: 1.2rem;
-  margin-right: 15px;
-}
-
 /* সমস্যা ও সমাধান সেকশন */
 .problem-solution {
   padding: 80px 0;
-  background-color: var(--light);
+  background-color: white;
 }
 
 .section-title {
@@ -222,7 +167,7 @@ nav ul li a.active {
 .ps-item {
   flex: 1;
   min-width: 300px;
-  background-color: white;
+  background-color: var(--light);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -245,18 +190,7 @@ nav ul li a.active {
   color: var(--dark);
 }
 
-.solution-note {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: var(--primary);
-  color: white;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-/* প্রোডাক্টS সেকশন */
+/* প্রোডাক্টস সেকশন */
 .products {
   padding: 80px 0;
   background-color: #f9f9f9;
@@ -536,10 +470,6 @@ footer {
 
   .hero p {
     font-size: 1rem;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
   }
 
   .section-title {
