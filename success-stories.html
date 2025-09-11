@@ -53,7 +53,7 @@
     </section>
 
     <!-- সাফল্যের গল্প সেকশন -->
-    <section class="success-stories">
+    <!-- <section class="success-stories">
       <div class="container">
         <h2 class="section-title">আমাদের সদস্যদের সাফল্যের গল্প</h2>
 
@@ -241,49 +241,82 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ভিডিও টেস্টিমোনিয়াল সেকশন -->
     <section class="video-testimonials">
-      <div class="container">
-        <h2 class="section-title">ভিডিও টেস্টিমোনিয়াল</h2>
+  <div class="container">
+    <!-- <h2 class="section-title">ভিডিও</h2> -->
 
-        <div class="videos-grid">
-          <div class="video-card">
-            <div class="video-placeholder">
-              <i class="fas fa-play-circle"></i>
-              <p>ভিডিও দেখতে ক্লিক করুন</p>
-            </div>
-            <div class="video-info">
-              <h3>রফিকুল ইসলামের সাফল্যের গল্প</h3>
-              <p>ঢাকা, বাংলাদেশ</p>
-            </div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-placeholder">
-              <i class="fas fa-play-circle"></i>
-              <p>ভিডিও দেখতে ক্লিক করুন</p>
-            </div>
-            <div class="video-info">
-              <h3>আয়শা সিদ্দিকার যাত্রা</h3>
-              <p>চট্টগ্রাম, বাংলাদেশ</p>
-            </div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-placeholder">
-              <i class="fas fa-play-circle"></i>
-              <p>ভিডিও দেখতে ক্লিক করুন</p>
-            </div>
-            <div class="video-info">
-              <h3>ছাত্রজীবনে সাফল্য</h3>
-              <p>সজীব রহমান, রাজশাহী</p>
-            </div>
-          </div>
+    <div class="videos-grid">
+      <div class="video-card" onclick="openModal('2NisSdaman0')">
+        <img src="https://img.youtube.com/vi/2NisSdaman0/hqdefault.jpg" alt="DXN SUCCESS STORY: d Salimur Rahman & Mst. Farida Parvin">
+        <div class="video-info">
+          <h3>1st Crown Ambassador Couple Bangladesh Md Salimur Rahman & Mst. Farida Parvin Success Story.</h3>
+          <p>Bangladesh</p>
         </div>
       </div>
-    </section>
+
+      <div class="video-card" onclick="openModal('io9r1_wBUWg')">
+        <img src="https://img.youtube.com/vi/io9r1_wBUWg/hqdefault.jpg
+" alt="XN Success Story of Gias Uddin">
+        <div class="video-info">
+          <h3>DXN Success Story of Gias Uddin</h3>
+          <p>Bahrain</p>
+        </div>
+      </div>
+
+      <div class="video-card" onclick="openModal('Wot-MZhCM5c')">
+        <img src="https://img.youtube.com/vi/Wot-MZhCM5c/hqdefault.jpg" alt="DXN Success Story of Judit Faragóné Keserű">
+        <div class="video-info">
+          <h3>DXN Success Story of Judit Faragóné Keserű</h3>
+          <p>Hungary, Europe</p>
+        </div>
+      </div>
+
+      <div class="video-card" onclick="openModal('tmFjlXq4Yf0')">
+        <img src="https://img.youtube.com/vi/tmFjlXq4Yf0/hqdefault.jpg" alt="Osler Sto Tomas">
+        <div class="video-info">
+          <h3>Success Story of Mr. Osler Sto Tomas</h3>
+          <p>Philippines</p>
+        </div>
+      </div>
+      
+      <div class="video-card" onclick="openModal('BrnZAUm1Hk8')">
+        <img src="https://img.youtube.com/vi/BrnZAUm1Hk8/hqdefault.jpg" alt="BUDIMAN SALIM">
+        <div class="video-info">
+          <h3>DXN CHANGED MY LIFE COMPLETELY - BUDIMAN SALIM</h3>
+          <p>Indonasia</p>
+        </div>
+      </div>
+      
+      <div class="video-card" onclick="openModal('Vy-olKzCAUk')">
+        <img src="https://img.youtube.com/vi/Vy-olKzCAUk/hqdefault.jpg" alt="DXN Success Story - Fatemi Ghani">
+        <div class="video-info">
+          <h3>DXN Success Story - Fatemi Ghani</h3>
+          <p>UAE</p>
+        </div>
+      </div>
+      
+      <div class="video-card" onclick="openModal('m71vx5DlrT4')">
+        <img src="https://img.youtube.com/vi/m71vx5DlrT4/hqdefault.jpg" alt="DXN SUCCESS STORY: Pavlos Hatzigiannis">
+        <div class="video-info">
+          <h3>DXN SUCCESS STORY: Pavlos Hatzigiannis</h3>
+          <p>Europe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="videoModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="video-wrapper">
+      <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 
     <!-- CTA সেকশন -->
     <section class="success-cta">
