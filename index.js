@@ -32,7 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const firstThree = Array.from(allProducts).slice(0, 3);
 
       const container = document.getElementById("home-products");
-      firstThree.forEach((prod) => container.appendChild(prod.cloneNode(true)));
+      firstThree.forEach((prod) => {
+        container.appendChild(prod.cloneNode(true));
+
+        // ডাইনামিক প্রোডাক্টে CSS পুনঃপ্রয়োগ
+        const actions = prod.querySelector(".product-actions");
+        if (actions) {
+          actions.style.display = "flex";
+          actions.style.justifyContent = "space-between";
+          actions.style.marginTop = "auto";
+          actions.style.gap = "10px";
+        }
+      });
 
       // see-more নিশ্চিতভাবে container পরে DOM এ আছে
       const seeMore = document.querySelector(".see-more");
