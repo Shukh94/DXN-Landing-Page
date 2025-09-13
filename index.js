@@ -28,3 +28,18 @@
 
       // পেজ লোড হলে WhatsApp নম্বর আপডেট করুন
       document.addEventListener("DOMContentLoaded", updateWhatsAppNumber);
+
+      // products.html থেকে শুধু প্রথম ৩টা প্রোডাক্ট লোড করা
+  fetch("products.html")
+    .then((res) => res.text())
+    .then((data) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, "text/html");
+      const allProducts = doc.querySelectorAll(".product-card");
+
+      // প্রথম ৩টা প্রোডাক্ট সিলেক্ট করা
+      const firstThree = Array.from(allProducts).slice(0, 3);
+
+      const container = document.getElementById("home-products");
+      firstThree.forEach((prod) => container.appendChild(prod.cloneNode(true)));
+    });

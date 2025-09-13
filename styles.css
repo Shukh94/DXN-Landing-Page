@@ -136,7 +136,7 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   max-width: 300px;
 }
 
@@ -230,6 +230,27 @@ nav ul li a.active {
   margin-bottom: 10px;
   color: var(--primary);
 }
+
+.product-actions{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+ .see-more {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .see-more .btn {
+    background: #009879;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .see-more .btn:hover {
+    background: #007f63;
+  }
 
 /* ব্যবসার সুযোগ সেকশন */
 .business-opportunity {
