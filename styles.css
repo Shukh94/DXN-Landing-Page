@@ -322,7 +322,7 @@ nav ul li a.active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin: 40px 0;
+  margin: 50px 0px 65px 0px;
 }
 
 .step {
