@@ -231,28 +231,33 @@ nav ul li a.active {
   color: var(--primary);
 }
 
-.product-actions {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-
+/* প্রোডাক্ট কার্ডের অ্যাকশন বাটন */
+.products .product-grid .product-card .product-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.see-more {
+/* হোম পেজের See More সেকশন */
+.products .see-more {
     text-align: center;
     margin-top: 20px;
-  }
-  .see-more .btn {
+}
+
+.products .see-more .btn {
     background: #009879;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-  }
-  .see-more .btn:hover {
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.products .see-more .btn:hover {
     background: #007f63;
-  }
+}
 
 /* ব্যবসার সুযোগ সেকশন */
 .business-opportunity {
