@@ -231,30 +231,35 @@ nav ul li a.active {
   color: var(--primary);
 }
 
+/* প্রোডাক্ট কার্ড অ্যাকশন */
 .products .product-grid .product-card .product-actions {
     margin-top: auto !important;
     display: flex !important;
     justify-content: space-between !important;
+    gap: 10px;
 }
 
+/* see-more */
 .products .see-more {
     text-align: center !important;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
 }
 
 .products .see-more .btn {
     background: #009879 !important;
     color: #fff !important;
-    padding: 10px 20px !important;
+    padding: 12px 25px !important;
     border-radius: 8px !important;
     text-decoration: none !important;
     font-weight: bold !important;
     display: inline-block !important;
+    transition: all 0.3s ease;
 }
 
 .products .see-more .btn:hover {
     background: #007f63 !important;
 }
+
 
 /* ব্যবসার সুযোগ সেকশন */
 .business-opportunity {
