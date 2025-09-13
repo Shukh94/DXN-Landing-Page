@@ -231,9 +231,11 @@ nav ul li a.active {
   color: var(--primary);
 }
 
-.product-actions{
-  text-align: center;
-  margin: 20px 0px;
+.product-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .see-more {
