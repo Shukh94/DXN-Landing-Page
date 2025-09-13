@@ -1,103 +1,243 @@
 <!DOCTYPE html>
 <html lang="bn">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DXN Business</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="index.js"></script>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <a href="index.html"><i>🌿</i> DXN</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#hero" class="active">হোম</a></li>
-          <li><a href="#products">প্রোডাক্টস</a></li>
-          <li><a href="#business">ব্যবসার সুযোগ</a></li>
-          <li><a href="#contact">যোগাযোগ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DXN - প্রাকৃতিক স্বাস্থ্য ও আর্থিক সুযোগ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- WhatsApp ফ্লোটিং বাটন -->
+    <a
+      href="https://wa.me/8801707042018?text=আমি%20DXN%20সম্পর্কে%20জানতে%20চাই"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1>DXN এর সাথে স্বাস্থ্য ও ব্যবসার নতুন যাত্রা</h1>
-      <p>বিশ্বজুড়ে জনপ্রিয় DXN পণ্য, এখন আপনার হাতের নাগালে।</p>
-      <a href="#products" class="btn">আমাদের প্রোডাক্টস দেখুন</a>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section class="products" id="products">
-    <div class="container">
-      <h2 class="section-title">আমাদের প্রোডাক্টস</h2>
-      <div class="product-grid" id="home-products"></div>
-      <div class="see-more">
-        <a href="products.html" class="btn">See More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Business Opportunity -->
-  <section class="business-opportunity" id="business">
-    <div class="bo-content">
-      <h2>ব্যবসার সুযোগ</h2>
-      <p>DXN এর মাধ্যমে স্বাস্থ্য সেবা দেওয়ার পাশাপাশি বাড়তি ইনকামের সুযোগ পান।</p>
-      <div class="benefits">
-        <div class="benefit"><i>💰</i><p>অতিরিক্ত আয়</p></div>
-        <div class="benefit"><i>🤝</i><p>টিম বিল্ডিং</p></div>
-        <div class="benefit"><i>🌎</i><p>গ্লোবাল ব্যবসা</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / WhatsApp -->
-  <section class="registration" id="contact">
-    <div class="whatsapp-section">
-      <div class="whatsapp-info">
-        <h2>WhatsApp এ যোগাযোগ করুন</h2>
-        <p>আপনার DXN যাত্রা শুরু করতে এখনই আমাদের সাথে যোগাযোগ করুন।</p>
-      </div>
-      <a href="https://wa.me/8801707042018?text=আমি%20DXN%20সম্পর্কে%20জানতে%20চাই" class="btn btn-whatsapp">WhatsApp এ মেসেজ করুন</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-section">
-        <h3>DXN সম্পর্কে</h3>
-        <p>DXN হলো বিশ্বের শীর্ষস্থানীয় Ganoderma ভিত্তিক হেলথ কোম্পানি।</p>
-      </div>
-      <div class="footer-section">
-        <h3>কুইক লিঙ্ক</h3>
-        <ul>
-          <li><a href="#hero">হোম</a></li>
-          <li><a href="#products">প্রোডাক্টস</a></li>
-          <li><a href="#business">ব্যবসার সুযোগ</a></li>
-          <li><a href="#contact">যোগাযোগ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>ফলো করুন</h3>
-        <div class="social-links">
-          <a href="#"><i>📘</i></a>
-          <a href="#"><i>📷</i></a>
-          <a href="#"><i>▶️</i></a>
+    <!-- হেডার সেকশন -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href=""><i class="fas fa-leaf"></i> <span>DXN</span></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-    <p class="copyright">© 2025 DXN Business. All Rights Reserved.</p>
-  </footer>
+    </header>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/8801707042018?text=আমি%20DXN%20সম্পর্কে%20জানতে%20চাই" class="whatsapp-float">💬</a>
-</body>
+    <!-- হিরো সেকশন -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>প্রাকৃতিক স্বাস্থ্য এবং আর্থিক স্বাধীনতা – একসাথে</h1>
+          <p>
+            DXN-এর প্রোডাক্ট ও ব্যবসার সুযোগ আপনার সুস্থ জীবন ও আয়ের পথ তৈরি করবে।
+            আজই শুরু করুন আপনার সাফল্যের যাত্রা।
+          </p>
+          <a
+            href="https://wa.me/8801707042018?text=আমি%20DXN%20এ%20রেজিস্ট্রেশন%20করতে%20চাই"
+            class="btn btn-whatsapp"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> যোগাযোগ করুন
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- সমস্যা ও সমাধান সেকশন -->
+    <section class="problem-solution">
+      <div class="container">
+        <h2 class="section-title">আপনি কি এসব সমস্যায় ভুগছেন?</h2>
+        <div class="ps-container">
+          <div class="ps-item">
+            <i class="fas fa-heartbeat"></i>
+            <h3>স্বাস্থ্য সমস্যা</h3>
+            <p>
+              কাজের চাপ, অস্বাস্থ্যকর খাবার ও অনিয়মিত জীবনযাপনের কারণে কি আপনার শরীরে সমস্যা দেখা দিচ্ছে?
+            </p>
+          </div>
+          <div class="ps-item">
+            <i class="fas fa-money-bill-wave"></i>
+            <h3>আর্থিক চাপ</h3>
+            <p>
+              মাস শেষে টাকা শেষ হয়ে যাওয়া, ঋণের বোঝা কিংবা পরিবারের চাহিদা পূরণে অসুবিধায় আছেন?
+            </p>
+          </div>
+          <div class="ps-item">
+            <i class="fas fa-clock"></i>
+            <h3>সময়ের অভাব</h3>
+            <p>
+              চাকরির ব্যস্ততায় নিজের জন্য সময় পাচ্ছেন না, আর স্বপ্ন পূরণের সুযোগ হারাচ্ছেন?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section on Home -->
+<section class="products" id="products">
+  <div class="container">
+    <h2 class="section-title">আমাদের প্রোডাক্টস</h2>
+    <div class="product-grid" id="home-products"></div>
+
+    <div class="see-more">
+      <a href="products.html" class="btn">See More</a>
+    </div>
+  </div>
+</section>
+
+    <!-- ব্যবসার সুযোগ সেকশন -->
+    <section class="business-opportunity" id="opportunity">
+      <div class="container">
+        <div class="bo-content">
+          <h2>ঝুঁকিমুক্ত ব্যবসার সুযোগ</h2>
+          <p>
+            DXN-এ ব্যবসা শুরু করতে আপনার কোনো পণ্য কিনতে হবে না। শুধু ফ্রি রেজিস্ট্রেশন করুন এবং আপনার রেফারেল লিংক শেয়ার করুন। তারপর থেকেই আয় শুরু হবে।
+          </p>
+
+          <div class="benefits">
+            <div class="benefit">
+              <i class="fas fa-wallet"></i>
+              <h3>কোনো বিনিয়োগ নেই</h3>
+              <p>শুধু ফ্রি রেজিস্ট্রেশন করলেই হবে</p>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-clock"></i>
+              <h3>নমনীয় সময়</h3>
+              <p>আপনার সুবিধামতো সময়ে কাজ করতে পারবেন</p>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-globe"></i>
+              <h3>গ্লোবাল সুযোগ</h3>
+              <p>বিশ্বের যেকোনো জায়গা থেকে কাজ করতে পারবেন</p>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/8801707042018?text=আমি%20DXN%20ব্যবসার%20সুযোগ%20সম্পর্কে%20জানতে%20চাই"
+            class="btn btn-whatsapp"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp-এ জানুন
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- সাফল্যের গল্প (ভিডিও) -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">সাফল্যের গল্প</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/2NisSdaman0" title="Success Story 1" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="testimonial">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Wot-MZhCM5c" title="Success Story 2" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="testimonial">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/tmFjlXq4Yf0" title="Success Story 3" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp রেজিস্ট্রেশন -->
+    <section class="registration" id="whatsapp">
+      <div class="container">
+        <h2 class="section-title">কিভাবে শুরু করবেন?</h2>
+        <div class="reg-steps">
+          <div class="step">
+            <div class="step-number">১</div>
+            <h3>WhatsApp-এ যোগাযোগ করুন</h3>
+            <p>নিচের বাটনে ক্লিক করে সরাসরি আমাদের সাথে WhatsApp-এ মেসেজ করুন।</p>
+          </div>
+          <div class="step">
+            <div class="step-number">২</div>
+            <h3>বিনামূল্যে রেজিস্টার করুন</h3>
+            <p>আমাদের প্রতিনিধি আপনাকে রেজিস্ট্রেশনে সাহায্য করবে।</p>
+          </div>
+          <div class="step">
+            <div class="step-number">৩</div>
+            <h3>নেটওয়ার্ক বিল্ড করুন ও আয় শুরু করুন</h3>
+            <p>রেজিস্ট্রেশন শেষে ব্যবসা শিখুন, নেটোওয়ার্ক মার্কেটিং করুন। টিম তৈরি করুন এবং আয় শুরু করুন।</p>
+          </div>
+        </div>
+
+        <div class="whatsapp-section">
+          <div class="whatsapp-info">
+            <h3>সরাসরি WhatsApp-এ যোগাযোগ করুন</h3>
+            <p>
+              নিচের বাটনে ক্লিক করে WhatsApp-এ মেসেজ পাঠান এবং ফ্রি রেজিস্ট্রেশন সম্পন্ন করুন। আমাদের টিম আপনাকে ধাপে ধাপে বুঝিয়ে দেবে।
+            </p>
+          </div>
+          <a
+            href="https://wa.me/8801707042018?text=আমি%20DXN%20এ%20রেজিস্ট্রেশন%20করতে%20চাই"
+            class="btn btn-whatsapp"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp-এ মেসেজ করুন
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>DXN সম্পর্কে</h3>
+            <p>
+              DXN একটি আন্তর্জাতিক কোম্পানি যা মূলত গ্যানোডার্মা ভিত্তিক স্বাস্থ্য পণ্য তৈরি করে। বিশ্বের 180+ দেশে আমাদের কার্যক্রম রয়েছে।
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>দ্রুত লিংক</h3>
+            <ul>
+              <li><a href="index.html">হোম</a></li>
+              <li><a href="products.html">প্রোডাক্টস</a></li>
+              <li><a href="business.html">ব্যবসার সুযোগ</a></li>
+              <li><a href="success-stories.html">সাফল্যের গল্প</a></li>
+              <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>যোগাযোগ</h3>
+            <p>ইমেইল: info@dxn-bd.com</p>
+            <p>ফোন: +8801707042018</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/8801707042018" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 DXN Bangladesh. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="products-data.js"></script>
+    <script src="home-products.js"></script>   -->
+    <script src="index.js"></script>
+  </body>
 </html>
